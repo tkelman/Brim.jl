@@ -13,9 +13,8 @@ partition, who return a `Modular`, and those who do fine-scale optimization
 of modularity, who return a `Dict`. This allows to combine different types
 of initial label attribution and optimization methods.
 
-The type `Modular` (soon to be replaced by `BinaryModular`, `FloatModular`,
-and `IntegerModular`) stores `A` (the matrix) and `S`, the community
-partition. *Both* are two-dimensional arrays of `Int64`.
+The type `Modular` stores `A` (the matrix) and `S`, the community partition.
+*Both* are two-dimensional arrays of `Int64`.
 
 ``` julia
 using Brim

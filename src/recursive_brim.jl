@@ -32,7 +32,7 @@ function bestPart!(Target::Array{Int64, 2}, Scores::Array{Float64, 2})
    @inbounds for i = 1:size(Target)[1]
       for c = 1:size(Scores)[2]
          if Scores[i,c] == best_scores[i]
-            Target[i,:] = zeros([1:size(Target)[2]])
+            Target[i,:] = zeros([1:size(Target)[2];])
             Target[i,c] = 1
             break
          else
